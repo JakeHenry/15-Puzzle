@@ -1,0 +1,65 @@
+<!-- 15 Puzzle Game Written by Jacob Henry 10/19/2015
+	 Slippery Rock University - Dr. Conlon - CpSc 217
+	 Program written entirely by Jacob Henry and no one else.
+	 w3schools.com was referenced frequently during production
+	 of this program.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<style type="text/css">
+body {
+	background-color: #4B4B4B;
+}
+
+table {
+	border: 5px solid black;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	height: 300px;
+}
+
+td {
+	border: 7px ridge black;
+	text-align: center;
+	border-color: black;
+	width: 30px;
+	height: 30px;
+	font-size: 150%;
+}
+
+div {
+	text-align: center;
+}
+
+input {
+	border: 5px ridge black;
+	width: 100px;
+	height: 35px;
+}
+
+h1 {
+	text-align: center;
+	color: Khaki;
+	font-size: 300%;
+	text-shadow: 2px 0px black, -2px 0px black, 0px 2px black, 0px -2px
+		black;
+}
+</style>
+<script type="text/javascript" src="15Puzzle.js"></script>
+</head>
+
+<body onload="createGame();">
+	<h1>15 Puzzle</h1>
+	<div>
+		<input type="button" value="Solve" onClick="fillCells();" /> <input
+			type="button" value="New Game" onClick="scramble();" /> <input
+			type="button" value="Directions"
+			onclick="window.open('henryj.directions.html')" />
+	</div>
+</body>
+</html>

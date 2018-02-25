@@ -1,0 +1,73 @@
+<!-- Directions page for 15 Puzzle Game Written by Jacob Henry 10/19/2015
+	 Slippery Rock University - Dr. Conlon - CpSc 217
+	 Program written entirely by Jacob Henry and no one else.
+	 w3schools.com was referenced frequently during production
+	 of this program.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Directions</title>
+<style>
+h1 {
+	text-align: center;
+	color: khaki;
+	text-shadow: 2px 0px black, -2px 0px black, 0px 2px black, 0px -2px
+		black;
+	font-size: 300%;
+}
+
+body {
+	background-color: #4B4B4B;
+}
+
+div {
+	text-align: center;
+}
+
+input {
+	border: 5px ridge black;
+	width: 100px;
+	height: 35px;
+}
+
+ul {
+	color: white;
+	text-shadow: 2px 0px black, -2px 0px black, 0px 2px black, 0px -2px
+		black;
+	font-size: 150%;
+}
+</style>
+</head>
+<body>
+	<h1>Directions</h1>
+	<ul id="ul1">
+		<h2>Buttons</h2>
+		<li>Solve - Will return the table to the solved state.</li>
+		<li>New Game - Will create a new scrambled table for the user to
+			solve.</li>
+		<li>Directions - Will open the page you are reading which
+			contains directions for the game.</li>
+	</ul>
+	<ul id="ul2">
+		<h2>How To Play</h2>
+		<li>Click on 'New Game' to scramble the table and start a new
+			game!</li>
+		<li>Click on numbers that are directly next to the blank space to
+			slide the number into that space.</li>
+		<li>Slide all numbers around so that they are in increasing
+			numerical order. i.e. 1st row: 1 2 3 4 etc.</li>
+		<li>Tip: To see what a solved game looks like, or if you just
+			give up, click the 'solve' button or refresh the page!</li>
+		<li>Another Tip: If the first three rows are complete and the
+			last row reads 13 15 14, the game cannot be solved! Its not your
+			fault! During the scrambling of the table, an illegal move must have
+			been made. e.g. Peeling off the stickers of a Rubik's Cube to solve
+			it.</li>
+	</ul>
+	<div>
+		<input type="button" value="Dismiss" onclick="window.close()" />
+	</div>
+</body>
+</html>
